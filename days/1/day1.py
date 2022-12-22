@@ -1,0 +1,1 @@
+print('\nOutput for challenge day 1\n')
