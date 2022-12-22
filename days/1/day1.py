@@ -6,4 +6,5 @@ with open('days/1/input.txt') as file:
 print(lines[0])
 
 for line in lines:
-    print(line)
+    if line.strip() != "":
+        print(line)
