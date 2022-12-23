@@ -1,10 +1,14 @@
 print('\nOutput for challenge day 1\n')
 
-with open('days/1/input.txt') as file:
+with open('days/1/input_simple.txt') as file:
     lines = file.readlines()
 
-print(lines[0])
-
+total = 0
 for line in lines:
-    if line.strip() != "":
-        print(line)
+    line = line.strip()
+    if line == "":
+        continue
+
+    line = int(line)
+    total = total + line
+print(total)
