@@ -16,8 +16,17 @@ for line in lines:
     intersec = (set1.intersection(set2))
     Allintersections.append(intersec)
 
-result = 0
-for line in Allintersections:
-    prioritylist.append(line)
+print(Allintersections)
 
+for line in Allintersections:
+    if any(letter.isupper() for letter in line):
+        number = [ord(char) - 38 for char in line]
+    else:
+        number = [ord(char) - 96 for char in line]
+    result = ', '.join(str(item) for item in number)
+    result = int(result)
+    prioritylist.append(result)
 print(prioritylist)
+print(sum(prioritylist))
+
+

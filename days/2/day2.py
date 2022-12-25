@@ -27,7 +27,7 @@ for line in lines:
     elif line == "C Z":
         total.append(6)
 
-print(sum(total))
+print((total))
         
 
     

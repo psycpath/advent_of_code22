@@ -18,6 +18,7 @@ for line in lines:
 
     line = int(line)
     total = total + line
+    print(line)
 
 total_sums.sort()
 total_sums.reverse()

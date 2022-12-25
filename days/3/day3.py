@@ -13,7 +13,7 @@ for line in lines:
 
     set1 = (set(first_compartment))
     set2 = (set(second_compartment))
-    intersec = list(set1.intersection(set2))
+    intersec = (set1.intersection(set2))
     Allintersections.append(intersec)
 
 
@@ -24,7 +24,13 @@ for line in Allintersections:
         number = [ord(char) - 40 for char in line]
     else:
         number = [ord(char) - 96 for char in line]
-    print()
+    prioritylist.append(number)
+
+print(prioritylist)
+
+
+
+    
 
 
 
