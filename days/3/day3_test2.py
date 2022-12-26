@@ -8,8 +8,8 @@ prioritylist = list()
 
 for line in lines:
     line = line.strip()
-    first_compartment = line[slice(0,len(line)//2)]
-    second_compartment = line[slice(len(line)//2, len(line))]
+    first_compartment = line[:len(line)//2]
+    second_compartment = line[len(line)//2 : len(line)]
 
     set1 = set(first_compartment)
     set2 = set(second_compartment)
