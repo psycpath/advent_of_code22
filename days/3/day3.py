@@ -14,9 +14,10 @@ for line in lines:
     set1 = set(first_compartment)
     set2 = set(second_compartment)
 
-    all_intersections = set1.intersection(set2)
+    all_intersections_set = set1.intersection(set2)
 
-    intersection = list(all_intersections)[0]
+    all_intersection_list = list(all_intersections_set)
+    intersection = all_intersection_list[0]
     intersections.append(intersection)
 
 for intersection in intersections:
@@ -27,4 +28,4 @@ for intersection in intersections:
 
     prioritylist.append(priority)
 
-print(sum(prioritylist))
+print("The answer to Day 3 part one is:", sum(prioritylist))
