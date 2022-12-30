@@ -18,7 +18,6 @@ for i in range(0, len(lines), 3):
     set3 = set(lines[i+2])
 
     all_intersections_set = set1.intersection(set2, set3)
-
     all_intersection_list = list(all_intersections_set)
 
     intersection = all_intersection_list[0]
@@ -37,6 +36,6 @@ print("The answer to Day 3 part one is:", sum(prioritylist))
 
 #GEILE HUERSOHNNNNNN, dash eig recht isi gsi für mich chline burschtu
 #han eif chli müsse überlege weisch, isch kei google notwendig gsi
-
+#Und etz mach BABY!!!
 
 

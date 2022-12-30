@@ -8,11 +8,9 @@ prioritylist = list()
 
 for line in lines:
     line = line.strip()
-    first_compartment = line[:len(line)//2]
-    second_compartment = line[len(line)//2 : len(line)]
 
-    set1 = set(first_compartment)
-    set2 = set(second_compartment)
+    set1 = set(line[: len(line)//2])
+    set2 = set(line[len(line)//2 : len(line)])
 
     all_intersections_set = set1.intersection(set2)
 
