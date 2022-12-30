@@ -4,6 +4,7 @@ with open('days/4/input.txt') as file:
     lines = file.readlines()
 
 total = list()
+totalintersections = list()
 
 for line in lines:
     line = line.strip()
@@ -37,4 +38,9 @@ for line in lines:
     elif set2.issubset(set1):
         total.append(1)
 
-print(sum(total))
+    if set1.intersection(set2) != set():
+        totalintersections.append(1)
+
+print("The Amount of fully contained sets is:", (sum(total)))
+print("The amount of sets with intersections is:",sum(totalintersections))
+print()
