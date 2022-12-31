@@ -8,27 +8,27 @@ totalintersections = list()
 
 for line in lines:
 
-#Getting the numbers from the pairs as integers
+#Getting the numbers from the range as integers
     line = line.strip()
     pair = line.split(",")
 
-    first_part = pair[0]
-    second_part = pair[1]
-    first_part = first_part.split("-")
-    second_part = second_part.split("-")
+    first_range = pair[0]
+    second_range = pair[1]
+    first_range = first_range.split("-")
+    second_range = second_range.split("-")
 
-    first_part_firstnum = int(first_part [0])
-    first_part_secondnum = int(first_part [1])
-    second_part_firstnum = int(second_part [0])
-    second_part_secondnum = int(second_part [1])
+    range1_start = int(first_range [0])
+    range1_end = int(first_range [1])
+    range2_start = int(second_range [0])
+    range2_end = int(second_range [1])
 
     set1 = set()
     set2 = set()
 
 #Creates and adds the whole range to set1 and set2
-    for numbers in range(first_part_firstnum, first_part_secondnum + 1):
+    for numbers in range(range1_start, range1_end + 1):
         set1.add(numbers)
-    for numbers in range(second_part_firstnum, second_part_secondnum + 1):
+    for numbers in range(range2_start, range2_end + 1):
         set2.add(numbers)
 
     if set1.issubset(set2):
@@ -36,7 +36,7 @@ for line in lines:
     elif set2.issubset(set1):
         total.append(1)
 
-#Part 2--
+    #Part 2--
     if set1.intersection(set2) != set():
         totalintersections.append(1)
 
