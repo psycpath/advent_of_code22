@@ -1,9 +1,15 @@
-A = {2, 3, 5, 4}
-B = {2, 5, 100}
-C = {2, 3, 8, 9, 10}
 
-print(C.intersection(A, B))
+Stack1 =  ["G", "W", "L", "J", "B", "R", "T", "D"]
+Stack2 =  ["C", "T", "Z", "R"]
+Stack4 =  ["V", "P", "S", "H", "C", "T", "D"]
+Stack5 =  ["Z", "D", "L", "T", "P", "G"]
+Stack6 =  ["D", "C", "Q", "J", "Z", "R", "B", "F"]
+Stack7 =  ["R", "T", "F", "M", "J", "D", "B", "S"]
+Stack8 =  ["M", "V", "T", "B", "R", "H", "L"]
+Stack9 =  ["V", "S", "D", "P", "Q"]
 
-set1 = range(5)
-for x in set1:
-    print(x+1)
+
+removed_element = Stack5.pop(0)
+Stack9.insert(0, removed_element)
+
+print(Stack9)
