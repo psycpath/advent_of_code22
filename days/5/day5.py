@@ -26,7 +26,8 @@ for line in lines:
     place_of_insertion = int(line[7:])
 
 
-    for _ in range(amount_of_crates):
+
+    for i in range(amount_of_crates):
         removed_element = (stacks[place_of_extraction - 1]).pop(0)
         stacks[place_of_insertion - 1].insert(0, removed_element)
 
