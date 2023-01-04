@@ -13,3 +13,7 @@ removed_element = Stack5.pop(0)
 Stack9.insert(0, removed_element)
 
 print(Stack9)
+
+
+for _ in range(5):
+    print("Ewald has a penile dysmorphia")

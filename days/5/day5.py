@@ -6,7 +6,8 @@ with open('days/5/input.txt') as file:
 
 stacks = [
         ["G", "W", "L", "J", "B", "R", "T", "D"],
-        ["C", "T", "Z", "R"],
+        ["C", "W", "S",],
+        ["M", "T", "C", "R"],
         ["V", "P", "S", "H", "C", "T", "D"],
         ["Z", "D", "L", "T", "P", "G"],
         ["D", "C", "Q", "J", "Z", "R", "B", "F"],
@@ -16,8 +17,16 @@ stacks = [
     ]
 
 for line in lines:
-    line = line.strip()
-    line.replace("move ", "")
-    line.replace("from", " ")
-    line.replace("to", " ")
-    print(line)
+    line = line.replace("move","")
+    line = line.replace("from", " ")
+    line = line.replace("to", " ")
+
+    amount_of_crates = int(line[:3])
+    place_of_extraction = int(line[3:7])
+    place_of_insertion = int(line[7:])
+
+
+
+    for _ in range(amount_of_crates):
+        removed_element = ((stacks[place_of_extraction - 1]).pop(0))
+        stacks[place_of_insertion-1].insert(0, removed_element)
