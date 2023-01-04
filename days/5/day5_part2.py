@@ -25,10 +25,16 @@ for line in lines:
     place_of_extraction = int(line[3:7])
     place_of_insertion = int(line[7:])
 
+    popped_items = list()
 
     for _ in range(amount_of_crates):
         removed_element = (stacks[place_of_extraction - 1]).pop(0)
-        stacks[place_of_insertion - 1].insert(0, removed_element)
+        popped_items.append(removed_element)
+
+    popped_items.reverse()
+
+    for i in range (0,len(popped_items)):
+        stacks[place_of_insertion - 1].insert(0,popped_items[i])
 
 
 print("The letters of the topmost crates are: ")
