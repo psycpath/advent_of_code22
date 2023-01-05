@@ -12,18 +12,11 @@ Stack9 =  ["V", "S", "D", "P", "Q"]
 removed_element = Stack5.pop(0)
 Stack9.insert(0, removed_element)
 
-print(Stack9)
 
 
-for _ in range(5):
-    print("Ewald has a penile dysmorphia")
-    
-[G]                 [D] [R]
-[W]         [V]     [C] [T] [M]
-[L]         [P] [Z] [Q] [F] [V]
-[J]         [S] [D] [J] [M] [T] [V]
-[B]     [M] [H] [L] [Z] [J] [B] [S]
-[R] [C] [T] [C] [T] [R] [D] [R] [D]
-[T] [W] [Z] [T] [P] [B] [B] [H] [P]
-[D] [S] [R] [D] [G] [F] [S] [L] [Q]
- 1   2   3   4   5   6   7   8   9
+set1 = set("a")
+set2 = set("a")
+set3 = set("adkf")
+set4 = set("sff")
+if (set1.intersection(set2, set3, set4)) == set():
+    print("schaissa")

@@ -28,8 +28,8 @@ for line in lines:
 
 
     for i in range(amount_of_crates):
-        removed_element = (stacks[place_of_extraction - 1]).pop(0)
-        stacks[place_of_insertion - 1].insert(0, removed_element)
+        removed_crate = (stacks[place_of_extraction - 1]).pop(0)
+        stacks[place_of_insertion - 1].insert(0, removed_crate)
 
 
 print("The letters of the topmost crates are: ")

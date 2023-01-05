@@ -28,12 +28,12 @@ for line in lines:
     popped_items = list()
 
     for i in range(amount_of_crates):
-        removed_element = (stacks[place_of_extraction - 1]).pop(0)
-        popped_items.append(removed_element)
+        removed_crate = (stacks[place_of_extraction - 1]).pop(0)
+        popped_items.append(removed_crate)
         popped_items.reverse()
         stacks[place_of_insertion - 1].insert(0, popped_items[i])
 
 
-print("The letters of the topmost crates are: ")
+print("The letters of the topmost crates in the second version are: ")
 for i in range(len(stacks)):
     print((stacks[i])[0], end='')
