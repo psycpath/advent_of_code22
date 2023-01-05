@@ -10,11 +10,9 @@ for char in lines:
 
         packet = str()
 
-        packet += (char[i])
-        packet += (char[i+1])
-        packet += (char[i+2])
-        packet += (char[i+3])
+        for n in range(0, 4):
+            packet += (char[i+n])
 
         if len(set(packet)) == len(packet):
-            print("The first marker appears at:", char.index(packet)+4)
+            print("The first marker appears at:", char.index(packet) + 4)
             break
