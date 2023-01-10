@@ -1,0 +1,14 @@
+x = int(input("Geben Sie eine Zahl ein."))
+
+if x > 0:
+    if x % 2 == 0:
+        print("Positive gerade Zahl.")
+    else:
+        print("Positive ungerade Zahl")
+
+else:
+    if x % 2 == 0:
+        print("Negative gerade Zahl.")
+    else:
+        print("negative ungerade Zahl")
+
