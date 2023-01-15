@@ -1,4 +1,4 @@
-print('\nOutput for challenge day 7\n')
+print('\nOutput for challenge day 6\n')
 
 with open('days/6/input.txt') as file:
     lines = file.readlines()
