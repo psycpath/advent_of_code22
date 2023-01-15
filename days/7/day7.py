@@ -6,3 +6,5 @@ with open('days/7/input.txt') as file:
 for line in lines:
     line = line.strip()
     print(line)
+
+"Kacki ide hösli"
