@@ -26,8 +26,7 @@ while x != 1:
     if (x-1)%4 == 0:
         computerspielzug = randint(1,3)
 
-    print("Computer nimmt", (x-1)%4, "Hölzchen")
+    print("Computer nimmt", computerspielzug, "Hölzchen")
     x -= computerspielzug
     if x == 1:
         print("Computer hat gewonnen")
-
