@@ -37,5 +37,4 @@ print("The answer to Day 3 part one is:", sum(prioritylist))
 #GEILE HUERSOHNNNNNN, dash eig recht isi gsi für mich chline burschtu
 #han eif chli müsse überlege weisch, isch kei google notwendig gsi
 #Und etz mach BABY!!!
-
-
+d
