@@ -12,7 +12,6 @@ while x != 1:
     print("Anzahl Streichhölzer:", x)
     print("")
     spielzug = int(input("Wie viele Streichhölzer nehmen Sie? [1,2,3] "))
-    if spielzug =! 1 or spielzug =!2 or spielzug =!3
 
 
     x -= spielzug
