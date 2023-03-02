@@ -29,4 +29,5 @@ while x != 1:
     print("Computer nimmt", computerspielzug, "Hölzchen")
     x -= computerspielzug
     if x == 1:
+        print("Anzahl Streichhölzer:", x)
         print("Computer hat gewonnen")

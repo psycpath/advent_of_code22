@@ -7,3 +7,4 @@ Example: to run the code for challenge day 1, use the following command from the
 ```bash
 python3 days/1/day1.py
 ```
+
