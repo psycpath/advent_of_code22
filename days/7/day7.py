@@ -21,7 +21,7 @@ print('\nOutput for challenge day 7\n')
 
 current_dir = Directory('/')
 
-with open('7\input_simple.txt') as file:
+with open('days/7/input_simple.txt') as file:
     lines = file.readlines()
 
 for line in lines[1:]:
