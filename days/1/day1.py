@@ -1,6 +1,6 @@
 print('\nOutput for challenge day 1\n')
 
-with open('days/1/input.txt') as file:
+with open('1/input.txt') as file:
     lines = file.readlines()
 
 lines.append('\n')

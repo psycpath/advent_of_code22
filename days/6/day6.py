@@ -1,6 +1,6 @@
 print('\nOutput for challenge day 6\n')
 
-with open('days/6/input.txt') as file:
+with open('6/input.txt') as file:
     lines = file.readlines()
 
 first_packet_announced = False

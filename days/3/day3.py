@@ -1,6 +1,6 @@
 print('\nOutput for challenge day 3\n')
 
-with open('days/3/input.txt') as file:
+with open('3/input.txt') as file:
     lines = file.readlines()
 
 intersections = list()
