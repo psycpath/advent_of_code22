@@ -1,7 +1,7 @@
 print('\nOutput for challenge day 5\n')
 import re
 
-with open('5/input.txt') as file:
+with open('days/5/input.txt') as file:
     lines = file.readlines()[10:]
 
 stacks = [

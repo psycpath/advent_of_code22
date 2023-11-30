@@ -1,6 +1,6 @@
 print('\nOutput for challenge day 2\n')
 
-with open('2/input.txt') as file:
+with open('days/2/input.txt') as file:
     lines = file.readlines()
 
 total = list()
